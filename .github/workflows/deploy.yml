@@ -1,0 +1,12 @@
+name: assignment
+on: push
+jobs:
+  read-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: Hello.txt
+        run: cat hello.txt
+  
+          
